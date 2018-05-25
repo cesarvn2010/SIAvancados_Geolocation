@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      GPS
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>    
+       <p>Latitude : {{latitude}}</p>
+       <p>Longitude : {{longitude}}</p>
+       <p>Endereço: {{enderecoPosicao}}</p>
+       <p>Latitude Destino : {{latitudeDestino}}</p>
+       <p>Longitude Destino: {{longitudeDestino}}</p>
+       <p>Endereço Destino: {{enderecoDestino}}</p>
+  </div>
+  
+  
+ <div id="map">   
+ </div>
+
+ <ion-fab right top>
+      
+  <button ion-fab (tap)="novoLugar()">        
+    <ion-icon name="pin"></ion-icon>        
+    <ion-icon name="search"></ion-icon>  
+  </button>
+  <button ion-fab (tap)="rota()">
+    <ion-icon name="car"></ion-icon>       
+  </button>
+      
+</ion-fab>
+  
+</ion-content>
